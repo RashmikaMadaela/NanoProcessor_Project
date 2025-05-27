@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab 9-10.srcs/sources_1/new/ALU.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Adder_3.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Decoder_2_4.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/new/FA.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/new/HA.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Instruction_Decoder.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/LUT.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Mux_2_3.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Program_Counter.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/ROM.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Register_4.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Register_Bank.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Tri_State_Buffer.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd" \
+"../../../../Lab 9-10.srcs/sim_1/new/TB_Nano_Processor.vhd" \
+
+# Do not sort compile order
+nosort
