@@ -1,0 +1,73 @@
+
+NanoProcessor – Practical Operation Instructions
+===============================================
+
+Target Platform:
+----------------
+BASYS 3 FPGA Board
+
+Processor Versions:
+-------------------
+1. Minimal Design
+2. Extended Design
+
+1. Powering the System:
+-----------------------
+- Connect the BASYS 3 board via USB to your computer.
+- Ensure the correct bitstream is programmed through Vivado or another FPGA tool.
+
+2. Reset Mechanism:
+-------------------
+- RESET is allocated to a dedicated **switch** (SW0).
+    • Switch ON: Applies reset (clears registers and sets PC to 0).
+    • Switch OFF: Releases reset (begins program execution).
+
+3. Input/Output Interface:
+--------------------------
+- **LEDs (LD0 - LD3)**: Display output of **Register R7** (4-bit signed value).
+- **Additional LEDs** (Extended only):
+    • LD6 – Equal Flag (Comparator output)
+    • LD7 – Greater Than Flag
+    • LD8 – Less Than Flag
+
+    • LD12 – Sign (from ALU)
+    • LD13 – Zero (from ALU)
+    • LD14 – Overflow (from ALU)
+    • LD15 – Carry (from ALU)
+
+- **Seven-Segment Display (AN0)**:
+    • Displays the content of **Register R7** in hexadecimal format.
+    • A LUT is used to drive the 7-segment display using the value of R7.
+
+4. Program Execution Flow:
+--------------------------
+- The processor executes instructions stored in **Program ROM**.
+- On startup or after reset:
+    • Program Counter (PC) begins at address 000.
+    • Instructions are fetched, decoded, and executed sequentially.
+
+- Minimal Instructions:
+    • MOVI R, d – Load immediate
+    • ADD Ra, Rb – Add registers
+    • NEG R – Two’s complement
+    • JZR R, d – Jump if zero
+
+- Extended Instructions (adds):
+    • AND Ra, Rb
+    • OR Ra, Rb
+    • MUL Ra, Rb
+    • Comparator with EQ, GT, LT flag outputs
+
+5. Expected Behavior:
+---------------------
+- Register outputs and flags are updated each clock cycle.
+- R7 output is visible on both LEDs and 7-segment display.
+- Program loops or halts based on logic in ROM (e.g., using JZR instructions).
+- Logical and arithmetic operations are reflected in real-time LED changes.
+
+6. Debug Tips:
+--------------
+- Ensure the reset switch is OFF before expecting visible output.
+- Use simulation waveforms to validate instruction sequences if hardware fails.
+- Confirm clock generator is functional if no activity is seen.
+
