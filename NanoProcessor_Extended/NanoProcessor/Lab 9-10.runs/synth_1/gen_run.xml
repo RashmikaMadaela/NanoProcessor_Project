@@ -40,7 +40,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/D_FF.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/Lab 5/Lab 5.srcs/sources_1/new/D_FF.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/DOWNLOAD/Documents/Lab 5/Lab 5.srcs/sources_1/new/D_FF.vhd"/>
         <Attr Name="ImportTime" Val="1743497972"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -60,7 +60,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/FA.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/Lab 3/Lab 3.srcs/sources_1/new/FA.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/DOWNLOAD/Documents/Lab 3/Lab 3.srcs/sources_1/new/FA.vhd"/>
         <Attr Name="ImportTime" Val="1740473167"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -68,7 +68,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/HA.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/Lab 3/Lab 3.srcs/sources_1/new/HA.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/DOWNLOAD/Documents/Lab 3/Lab 3.srcs/sources_1/new/HA.vhd"/>
         <Attr Name="ImportTime" Val="1740472069"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -88,7 +88,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/Multiplier_4.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/Multiplier/Multiplier.srcs/sources_1/new/Multiplier_4.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/DOWNLOAD/Documents/Multiplier/Multiplier.srcs/sources_1/new/Multiplier_4.vhd"/>
         <Attr Name="ImportTime" Val="1741686095"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -144,7 +144,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/Slow_Clk.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Documents/Lab 5/Lab 5.srcs/sources_1/new/Slow_Clk.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/DOWNLOAD/Documents/Lab 5/Lab 5.srcs/sources_1/new/Slow_Clk.vhd"/>
         <Attr Name="ImportTime" Val="1745298768"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -184,7 +184,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Basys3Labs.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="E:/Basys3Labs.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Basys3Labs.xdc"/>
         <Attr Name="ImportTime" Val="1747995615"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

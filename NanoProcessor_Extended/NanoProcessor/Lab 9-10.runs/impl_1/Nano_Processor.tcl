@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint Nano_Processor_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/DOWNLOAD/Downloads/NanoProcessor_Extended/NanoProcessor/Lab 9-10.cache/wt} [current_project]
+  set_property webtalk.parent_dir {E:/Github/NanoProcessor_Project/NanoProcessor_Extended/NanoProcessor/Lab 9-10.cache/wt} [current_project]
   catch { write_mem_info -force Nano_Processor.mmi }
   write_bitstream -force Nano_Processor.bit 
   catch {write_debug_probes -quiet -force Nano_Processor}
