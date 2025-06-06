@@ -1,0 +1,528 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May 26 21:00:58 2025
+# Process ID: 17700
+# Current directory: E:/Github/NanoProcessor/Lab 9-10.runs/synth_1
+# Command line: vivado.exe -log Nano_Processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nano_Processor.tcl
+# Log file: E:/Github/NanoProcessor/Lab 9-10.runs/synth_1/Nano_Processor.vds
+# Journal file: E:/Github/NanoProcessor/Lab 9-10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Nano_Processor.tcl -notrace
+Command: synth_design -top Nano_Processor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11104 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 409.824 ; gain = 95.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nano_Processor' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:45]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clock' of component 'Slow_Clk' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:39]
+INFO: [Synth 8-3491] module 'Program_Counter' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Program_Counter.vhd:34' bound to instance 'Program_Counter_Unit' of component 'Program_Counter' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Program_Counter.vhd:41]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:34' bound to instance 'D_FF_0' of component 'D_FF' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Program_Counter.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (2#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:42]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:34' bound to instance 'D_FF_1' of component 'D_FF' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Program_Counter.vhd:61]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:34' bound to instance 'D_FF_2' of component 'D_FF' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Program_Counter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (3#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Program_Counter.vhd:41]
+INFO: [Synth 8-3491] module 'ROM' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ROM.vhd:36' bound to instance 'Program_ROM' of component 'ROM' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'ROM' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ROM.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (4#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ROM.vhd:41]
+INFO: [Synth 8-3491] module 'Mux_2_3' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_3.vhd:34' bound to instance 'Mux_2_3_Unit' of component 'Mux_2_3' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_3' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_3.vhd:41]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer.vhd:34' bound to instance 'buffer_0' of component 'Tri_State_Buffer' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_3.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Tri_State_Buffer' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Tri_State_Buffer' (5#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer.vhd:40]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer.vhd:34' bound to instance 'buffer_1' of component 'Tri_State_Buffer' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_3.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_3' (6#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_3.vhd:41]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'Inst_Decoder' of component 'Instruction_Decoder' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Instruction_Decoder.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (7#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Instruction_Decoder.vhd:49]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:34' bound to instance 'Reg_Bank' of component 'Register_Bank' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'Register_Bank' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'Decoder_3_8' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd:34' bound to instance 'Decoder_3_8_0' of component 'Decoder_3_8' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_8' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_2_4.vhd:34' bound to instance 'Decoder_2_4_0' of component 'Decoder_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_2_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_4' (8#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_2_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_2_4.vhd:34' bound to instance 'Decoder_4_1' of component 'Decoder_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_8' (9#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd:40]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R0' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Register_4' (10#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:42]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R1' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:82]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R2' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:89]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R3' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:96]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R4' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:103]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R5' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:110]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R6' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:117]
+INFO: [Synth 8-3491] module 'Register_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_4.vhd:34' bound to instance 'R7' of component 'Register_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (11#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Register_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'Mux_2_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd:34' bound to instance 'Mux_2_4_Unit' of component 'Mux_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd:41]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_0' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Tri_State_Buffer_4' (12#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:40]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_1' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_4' (13#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd:41]
+INFO: [Synth 8-3491] module 'Mux_8_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:34' bound to instance 'Mux_8_4_1' of component 'Mux_8_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'Mux_8_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:49]
+INFO: [Synth 8-3491] module 'Decoder_3_8' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_3_8.vhd:34' bound to instance 'Decoder_3_8_0' of component 'Decoder_3_8' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:67]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_1' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:74]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_2' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:81]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_3' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:88]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_4' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:95]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_5' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:102]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_6' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:109]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_7' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:116]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_8' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8_4' (14#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:49]
+INFO: [Synth 8-3491] module 'Mux_8_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_8_4.vhd:34' bound to instance 'Mux_8_4_2' of component 'Mux_8_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:242]
+INFO: [Synth 8-3491] module 'ALU' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:34' bound to instance 'Arithmetic_Logic_Unit' of component 'ALU' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:49]
+INFO: [Synth 8-3491] module 'Mux_2_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_2_4.vhd:34' bound to instance 'MUX_1' of component 'Mux_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:102]
+INFO: [Synth 8-3491] module 'Add_Sub_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:34' bound to instance 'ADD_SUB_UNIT' of component 'Add_Sub_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Add_Sub_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'HA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'HA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (15#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'FA' (16#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:71]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:80]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'Add_Sub_4' (17#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Add_Sub_4.vhd:42]
+INFO: [Synth 8-3491] module 'Multiplier_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:34' bound to instance 'Multiplier_Unit' of component 'Multiplier_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Multiplier_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:40]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1_1' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:63]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1_2' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:71]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1_3' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:79]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1_4' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:87]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2_1' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:95]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2_2' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:103]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2_3' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:111]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2_4' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:119]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3_1' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:127]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3_2' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:135]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3_3' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:143]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3_4' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:151]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier_4' (18#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/Multiplier_4.vhd:40]
+INFO: [Synth 8-3491] module 'Mux_4_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:34' bound to instance 'MUX_2' of component 'Mux_4_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'Mux_4_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:44]
+INFO: [Synth 8-3491] module 'Decoder_2_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Decoder_2_4.vhd:34' bound to instance 'Decoder' of component 'Decoder_2_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:60]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_0' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:67]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_1' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:74]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_2' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:81]
+INFO: [Synth 8-3491] module 'Tri_State_Buffer_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Tri_State_Buffer_4.vhd:34' bound to instance 'buffer_3' of component 'Tri_State_Buffer_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'Mux_4_4' (19#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Mux_4_4.vhd:44]
+INFO: [Synth 8-3491] module 'Comp_4' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:34' bound to instance 'Comparator' of component 'Comp_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'Comp_4' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:43]
+INFO: [Synth 8-3491] module 'Comp_1' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_1.vhd:34' bound to instance 'Comp_1_MSB' of component 'Comp_1' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'Comp_1' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Comp_1' (20#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_1.vhd:43]
+INFO: [Synth 8-3491] module 'Comp_1' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_1.vhd:34' bound to instance 'Comp_1_2' of component 'Comp_1' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:66]
+INFO: [Synth 8-3491] module 'Comp_1' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_1.vhd:34' bound to instance 'Comp_1_1' of component 'Comp_1' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:74]
+INFO: [Synth 8-3491] module 'Comp_1' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_1.vhd:34' bound to instance 'Comp_1_LSB' of component 'Comp_1' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'Comp_4' (21#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Comp_4.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (22#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/ALU.vhd:49]
+INFO: [Synth 8-3491] module 'Adder_3' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Adder_3.vhd:34' bound to instance 'Adder_3_bit' of component 'Adder_3' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'Adder_3' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Adder_3.vhd:40]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Adder_3.vhd:55]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Adder_3.vhd:64]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Adder_3.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'Adder_3' (23#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Adder_3.vhd:40]
+INFO: [Synth 8-3491] module 'LUT' declared at 'E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/LUT.vhd:35' bound to instance 'LUT_Unit' of component 'LUT' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'LUT' [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/LUT.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT' (24#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/LUT.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Nano_Processor' (25#1) [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/new/Nanoprocessor.vhd:45]
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[3] driven by constant 1
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[2] driven by constant 1
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[1] driven by constant 1
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 466.059 ; gain = 152.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 466.059 ; gain = 152.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 466.059 ; gain = 152.070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Github/NanoProcessor/Lab 9-10.srcs/constrs_1/imports/Basys3Labs.xdc]
+Finished Parsing XDC File [E:/Github/NanoProcessor/Lab 9-10.srcs/constrs_1/imports/Basys3Labs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Github/NanoProcessor/Lab 9-10.srcs/constrs_1/imports/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nano_Processor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nano_Processor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 799.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 799.855 ; gain = 485.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 799.855 ; gain = 485.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 799.855 ; gain = 485.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "prosseser_ROM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Jump_Flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 799.855 ; gain = 485.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 85    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     13 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   4 Input      3 Bit        Muxes := 5     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Slow_Clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     13 Bit        Muxes := 1     
+Module Instruction_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   4 Input      3 Bit        Muxes := 5     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module Register_4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module FA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module Add_Sub_4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module Comp_1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Comp_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module LUT 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element Program_Counter_Unit/D_FF_0/Qbar_reg was removed.  [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element Program_Counter_Unit/D_FF_1/Qbar_reg was removed.  [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element Program_Counter_Unit/D_FF_2/Qbar_reg was removed.  [E:/Github/NanoProcessor/Lab 9-10.srcs/sources_1/imports/new/D_FF.vhd:49]
+INFO: [Synth 8-5545] ROM "Slow_Clock/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Slow_Clock/clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[3] driven by constant 1
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[2] driven by constant 1
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[1] driven by constant 1
+WARNING: [Synth 8-3917] design Nano_Processor has port AnodeSelector[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R0/Q_reg[0]' (FDCE) to 'Reg_Bank/R0/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R0/Q_reg[1]' (FDCE) to 'Reg_Bank/R0/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R0/Q_reg[2]' (FDCE) to 'Reg_Bank/R0/Q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R0/Q_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R0/Q_reg[3]) is unused and will be removed from module Nano_Processor.
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R2/Q_reg[0]' (FDCE) to 'Reg_Bank/R5/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R3/Q_reg[0]' (FDCE) to 'Reg_Bank/R5/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R4/Q_reg[0]' (FDCE) to 'Reg_Bank/R5/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R5/Q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R2/Q_reg[1]' (FDCE) to 'Reg_Bank/R5/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R3/Q_reg[1]' (FDCE) to 'Reg_Bank/R5/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R4/Q_reg[1]' (FDCE) to 'Reg_Bank/R5/Q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R5/Q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R2/Q_reg[2]' (FDCE) to 'Reg_Bank/R5/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R3/Q_reg[2]' (FDCE) to 'Reg_Bank/R5/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R4/Q_reg[2]' (FDCE) to 'Reg_Bank/R5/Q_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R5/Q_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R2/Q_reg[3]' (FDCE) to 'Reg_Bank/R5/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R3/Q_reg[3]' (FDCE) to 'Reg_Bank/R5/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Reg_Bank/R4/Q_reg[3]' (FDCE) to 'Reg_Bank/R5/Q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R5/Q_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R5/Q_reg[0]) is unused and will be removed from module Nano_Processor.
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R5/Q_reg[1]) is unused and will be removed from module Nano_Processor.
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R5/Q_reg[2]) is unused and will be removed from module Nano_Processor.
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R5/Q_reg[3]) is unused and will be removed from module Nano_Processor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 799.855 ; gain = 485.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 799.855 ; gain = 485.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R6/Q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R6/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R6/Q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Reg_Bank/R6/Q_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R6/Q_reg[3]) is unused and will be removed from module Nano_Processor.
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R6/Q_reg[2]) is unused and will be removed from module Nano_Processor.
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R6/Q_reg[1]) is unused and will be removed from module Nano_Processor.
+WARNING: [Synth 8-3332] Sequential element (Reg_Bank/R6/Q_reg[0]) is unused and will be removed from module Nano_Processor.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    10|
+|4     |LUT2   |    69|
+|5     |LUT3   |    14|
+|6     |LUT4   |    22|
+|7     |LUT5   |     9|
+|8     |LUT6   |    12|
+|9     |FDCE   |     8|
+|10    |FDRE   |    37|
+|11    |IBUF   |     2|
+|12    |OBUF   |    22|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------------+------+
+|      |Instance               |Module          |Cells |
++------+-----------------------+----------------+------+
+|1     |top                    |                |   214|
+|2     |  Program_Counter_Unit |Program_Counter |    52|
+|3     |    D_FF_0             |D_FF            |    18|
+|4     |    D_FF_1             |D_FF_1          |    15|
+|5     |    D_FF_2             |D_FF_2          |    19|
+|6     |  Reg_Bank             |Register_Bank   |    83|
+|7     |    R1                 |Register_4      |    44|
+|8     |    R7                 |Register_4_0    |    39|
+|9     |  Slow_Clock           |Slow_Clk        |    54|
++------+-----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 809.176 ; gain = 161.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 809.176 ; gain = 495.188
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+167 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 811.125 ; gain = 509.816
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Github/NanoProcessor/Lab 9-10.runs/synth_1/Nano_Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Nano_Processor_utilization_synth.rpt -pb Nano_Processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 811.125 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 21:01:21 2025...
